@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			//扩展1.
+//			let name="an";
+//			let age=18;
+//			//下面对象的key和value是相同的，那么写一个就ok
+//			let obj={
+//				name,
+//				age
+//			}
+//			console.log(obj.name+" "+obj.age);
+			
+			
+			//扩展2:Object.assign()--将多个对象合并为一个对象
+//			let obj1={name:"an"};
+//			let obj2={age:18};
+//			let obj3={sex:"女"};
+//			let obj={};
+//			Object.assign(obj,obj1,obj2,obj3,);
+//			console.log(obj);
+			
+			
+//			//3.延展操作符-->...
+//			var str="今天天气很好";
+//			console.log(str);
+//			//延展操作符将str转换为strArr中的每一项
+//			var strArr=[...str];
+//			console.log(strArr);
+			
+			
+			//面试题小例子
+			//将arr转化为数组
+			let arr=[1,2,3,2,3,5,6,7];
+			//方式1：Array.from()
+			console.log(Array.from(new Set(arr)));
+			//方式2：延展操作符
+			console.log([...new Set(arr)]);
+			
+			
+		</script>
+	</body>
+</html>

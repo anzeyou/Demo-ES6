@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//默认情况下：
+//			var obj={
+//				a:1,
+//				b:2
+//			}
+//			var {a,b}=obj;//此句就相当于  var {a:a,b:b}=obj
+//			console.log(a,b);
+			
+			
+			//结构内容对应
+//			var obj={
+//				a:1,
+//				b:2
+//			}
+//			var {a,b}=obj;//解构的内容a和b是对应的
+//			console.log(a,b);
+			
+			
+//			var obj={
+//				a:1,
+//				b:2
+//			}
+//			var {c,b}=obj;
+//			console.log(c,b);//和解构对象名称不对应时，输出undefined，c的值就是undefined
+
+   
+			//重新定义名称
+//			var obj={
+//				a:1,
+//				b:2
+//			}
+//			var {a:c,b}=obj;//先找到解构对象的名称，然后后面跟上:加上新名称就可以了
+//			console.log(c,b);
+			
+			//较复杂的解构实例
+//			var obj={
+//			 	arr:[
+//				 	'anan',
+//				 	{
+//				 		a:1
+//				 	}
+//			 	]
+//		    }
+//			
+//			var {arr:[name,{a}]}=obj
+//			console.log(name,a);
+
+		</script>
+	</body>
+</html>

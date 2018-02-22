@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.test{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		<script type="text/javascript">
+			
+			//未使用模板字符串
+			let html="<div><span>今天天气不错，适合写代码</span></div>"
+			console.log(html);
+			
+			//模板字符串
+			let str="很适合写代码";
+			let className="test";
+			let div=`
+				<div>
+					<span>真的是很好啊</span>
+					<span class=${className}>${str}</span>
+				</div>
+			`;
+			
+			
+			//模板字符串中传递东西通过${内容}
+		</script>
+	</body>
+</html>

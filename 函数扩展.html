@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			//1.为形参设置默认值
+//			function sum(num1=1,num2=2){
+//				return num1+num2;
+//			}
+//			console.log(sum());
+			
+			//2.参数形式结合延展操作符
+			
+//			//es5中
+//			function sum(){
+//				var res=0;
+//				for(let value=0;value<arguments.length;value++){
+//				//上面的语句等价于下面的
+//				//for(let value of arguments){
+//					res+=value;
+//				}
+//				return res;
+//			}
+//			console.log(sum(1,2,3));
+				
+				
+//			//es6中
+//			function sum(...nums){
+//				var res=0;
+////				for(let value=0;value<nums.length;value++){
+//				//上面的语句等价于下面的
+//				for(let value of nums){
+//					res+=value;
+//				}
+//				return res;
+//			}
+//			console.log(sum(1,2,5));
+
+			
+//			//上面的方式中，参数可以进行多样化传递
+//			function sum(name,...nums){
+//				var res=0;
+//				console.log(name);
+////				for(let value=0;value<nums.length;value++){
+//				//上面的语句等价于下面的
+//				for(let value of nums){
+//					res+=value;
+//				}
+//				return res;
+//			}
+//			console.log(sum("anan",1,2,5));
+
+
+			//3.箭头函数
+			//例1：es5中
+//			function sum(a,b){
+//				return a+b;
+//			}
+//			console.log(sum(1,3));
+
+//			//es6
+//			let res=(a,b)=>{return a+b};//res是方法
+//			console.log(res(1,2));
+
+			//例2：数组的循环遍历
+//			//es5
+//			var arr=[1,3,4,5];
+//			arr.forEach(function(value,index){
+//				console.log(value+" "+index);
+//			})
+
+			//es6:
+//			var arr=[1,3,4,5];
+//			arr.forEach((value,index)=>{
+//				console.log(value+" "+index);
+//			})
+
+
+			
+			//箭头函数的应用--解决的this的指向问题
+			
+//			function demo(){
+//				setTimeout(function(){
+//					console.log(this);
+//				},1000)
+//			}
+//			let obj={};
+//			demo.call(obj);//想把this指向obj但是此时的输出结果this指向window
+			
+			
+			//箭头函数解决了this的指向问题-->箭头函数中的this总是指向外层调用者，也就是Obj
+//			function demo(){
+//				setTimeout(()=>{
+//					console.log(this);
+//				},1000)
+//			}
+//			let obj={};
+//			demo.call(obj);//这里的this指向obj对象
+			
+			
+				
+		</script>
+	</body>
+</html>

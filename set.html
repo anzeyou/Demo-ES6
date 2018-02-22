@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//set的应用场景
+
+
+
+			//特点：
+			//1.元素不重复，每个都是唯一的
+			//2.类似数组
+			//3.用于去重
+			//4.set中的key和value是相等的
+			
+			
+			//需要掌握:1个属性和四个方法
+			
+			//创建
+			let set=new Set(["张三","李四 "]);
+			//一个属性
+			console.log(set.size);
+			//下面是四个方法：
+			//添加元素
+			set.add("王五");
+			//删除元素
+			set.delete("王五");
+			//查看元素是否存在
+			console.log(set.has("张三"));
+			//清空数组
+			//set.clear();			
+			//console.log(set);
+			
+			console.log(set.values);
+			
+		</script>
+	</body>
+</html>

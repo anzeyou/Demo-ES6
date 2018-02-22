@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//map类似对象，但是传统的对象的键只能是字符串形式，map中的键任意，
+			//所以map是更加完善的对象
+			
+			
+			//创建--方式1：
+			let omap=new Map();
+			omap.set("one",1);//第一个参数是key，第二个参数是value
+			omap.set("two",1);
+			omap.set("three",1);
+			console.log(omap);
+			//创建--方式2：
+			let map1=new Map([//传入一个数组对象，里面的内容也是数组形式
+				["name","anan"],//里面的key和value之间用逗号隔开
+				["age",40]
+			])
+			console.log(map1);
+
+
+
+//			//map的遍历--foreach()
+//			let omap=new Map([
+//				['name',"anna"],
+//				['age',"18"],
+//			]);
+//			omap.forEach(function(value,index){
+//				console.log(index);
+//				console.log(value);
+//			})
+			
+			
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

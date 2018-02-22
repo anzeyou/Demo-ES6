@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+//			//es5中的构造函数
+//			function Person(){
+//				this.name="an";
+//				this.age="18"
+//			}
+//			
+//			Person.prototype.getName=function(){
+//				alert(this.name);
+//			}
+//			var you=new Person();
+//			you.getName();
+
+
+			//es6中的构造函数：
+			class Person{
+				//构造器，接收参数，这里面进行类中的属性的设置，构造器的名称不能更改
+				constructor(name,age){
+					this.name=name;
+					this.age=age;
+				}
+				//下面是类中的方法--类似es5中的原型函数，名称随意
+				shuchu(){
+					return this.name+" "+this.age;
+				}
+			};
+			var person=new Person("an",18);
+			//下面将person调用函数shuchu的结果输出
+			console.log(person.shuchu());//输出结果：an 18
+			
+
+
+
+		</script>
+	</body>
+</html>

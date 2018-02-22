@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//下面的变量提升问题 输出结果是 undefined
+//			var a=1;
+//			function foo(){
+//				if(false){
+//					var a=1;
+//				}
+//				console.log(a);
+//			}
+//			foo();
+
+
+			//解析：变量提升后：
+//			var a=1;
+//			function foo(){
+//				var a;//将var声明的变量提升到该作用域的最前端，但是值不会得到提升
+//				if(false){
+//					a=1;//这里将a的值设置为1
+//				}
+//				console.log(a);//输出结果是undefined，因为上面的if语句不会被执行，
+//								//所以a没有被赋值，结果为undefined
+//			}
+//			foo();
+			
+			
+			
+			
+			//实例2
+			{
+				console.log(b);//输出结果：undefined
+				var b="an";
+			}
+			
+			//解析--变量提升后的代码：
+			{
+				var b;
+				console.log(b);
+				b="an";
+			}
+
+			
+
+			
+		</script>
+	</body>
+</html>
